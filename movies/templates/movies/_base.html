@@ -1,8 +1,15 @@
 <html>
     <body>
         <div>
-            <a href="{% url 'home' %}">Fav Movies</a>
-            <a href="{% url 'about' %}">About</a>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}">Fav Movies</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">About</a>
+                </li>
+            </ul>
+            
             {% block content %} {% endblock %}
         </div>
     </body>
